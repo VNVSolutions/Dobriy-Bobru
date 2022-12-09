@@ -1,0 +1,131 @@
+
+.content{
+    padding: 80px 0 50px 0;
+}
+.support__container{
+
+}
+.support__title{
+    text-align: center;
+    font-size:  calc( (100vw - 480px)/(1280 - 480) * (40 - 30) + 30px);
+}
+.tabs__container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 40px;
+}
+.show{
+    display: block;
+}
+.tab {
+    overflow: hidden;
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.tabs__title{
+    font-size: 25px;
+}
+
+
+.tablinks{
+    background: #FFFFFF;
+    text-transform: uppercase;
+    float: left;
+
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 21) + 15px);
+    flex: 1 1 auto;
+    text-align: center;
+    border: 1px solid #2c2c2c;
+}
+
+.tablinks.right-radius{
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.tablinks.left-radius{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.tablinks:hover {
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 830px){
+
+.tab{
+    gap: 10px;
+}
+.tablinks{
+    border-radius: 15px;
+}
+}
+.tablinks.active {
+    background-color: #ccc;
+}
+
+.tablinks.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+
+    display: none;
+    padding: 10px 12px;
+   background: #FFFFFF;
+    margin-top: 10px;
+    border-top: none;
+    border-radius: 20px;
+    font-size: 19px;
+}
+.tabcontent.show{
+    display: block;
+
+}
+.tablinks.active{
+    border: 2px solid #008000;
+
+}
+
+.tab-content-text{
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.once__item{
+
+}
+.contact_item{
+margin-top: 30px;
+}
+.once__input,
+.tab__input{
+    width: 100%;
+    height: 50px;
+    text-indent: 10px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.btn-box{
+    width: 100%;
+    margin-top: 20px;
+
+}
+.support-btn{
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 14px 0;
+    background-color: darkgreen;
+    border-radius: 15px;
+}

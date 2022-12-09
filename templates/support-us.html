@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/style/support.css">
+    <link rel="stylesheet" href="/static/style/style.css">
+    <title>Допомогти</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header container">
+        <img src="/static/img/logo.jpg" alt="logo" class="header__logo">
+        <nav class="nav not-adaptive">
+            <ul class="menu__item">
+                <li class="menu__link ua_lang ">
+                    <a href="/">Головна</a>
+                </li>
+                <li class="menu__link ua_lang ">
+                    <a href="#">Про фонд</a>
+                </li>
+
+                <li class="menu__link ua_lang ">
+                    <a href="#"> Підтримати ЗСУ</a>
+
+                </li>
+
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox"/>
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__link" href="#">Про фонд</a></li>
+                <li><a class="menu__link" href="#">Підтримати ЗСУ</a></li>
+                <div class="header__btn-change-lang ">
+                    <a class="current-lang" href="index.html">Ua</a>
+                    <div class="options options-hide">
+                        <p class="options-lang">Українська</p>
+                        <p class="options-lang">English</p>
+                    </div>
+                </div>
+
+            </ul>
+
+        </div>
+        <div class="header__btn-change-lang not-adaptive">
+            <a class="current-lang" href="/supporteng">Eng</a>
+            <div class="options options-hide">
+                <p class="options-lang">Українська</p>
+                <p class="options-lang">English</p>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="content">
+        <section class="support">
+            <div class="support__container container">
+                <h1 class="support__title">
+                    ЗРОБИТИ ВНЕСОК ДО НАШОГО БЛАГОДІЙНОГО ФОНДУ
+                </h1>
+                <div class="tabs__container">
+                    <div class="tab__item">
+                        <h2 class="tabs__title">
+                            Кому ви хочете допомогти?
+                        </h2>
+                        <div class="tab who-to-help">
+                            <button class="tablinks active left-radius" onclick="openTabs(event, 'army')">Армія</button>
+                            <button class="tablinks right-radius " onclick="openTabs(event, 'fond')">Фонд</button>
+                        </div>
+                        <div id="army" class="tabcontent show">
+
+                            <p>Всі кошти залучені на допомогу армії будуть витрачені виключно на закупівлі для ЗСУ та
+                                інші
+                                спецпідрозділи з метою підвищення обороноздатності України.</p>
+                        </div>
+
+                        <div id="fond" class="tabcontent">
+                            <p>Всі кошти спрямовані на підтримку Фонду будуть витрачені на забезпечення адміністративної
+                                діяльності організації, а за можливості можуть бути перераховані на рахунок для допомоги
+                                Армії.</p>
+                        </div>
+
+                    </div>
+                    <div class="tab__item">
+                        <h2 class="tabs__title">
+                            Платежі
+                        </h2>
+                        <div class="tab pay">
+                            <button class="tablinks left-radius" onclick="openTabs(event, 'card')">Платіжною картою
+                            </button>
+                            <button class="tablinks" onclick="openTabs(event, 'transition')">перекази по україні
+                            </button>
+                            <button class="tablinks right-radius" onclick="openTabs(event, 'crypto')">криптовалюта
+                            </button>
+                        </div>
+                        <div id="card" class="tabcontent ">
+
+                            <p>card</p>
+                        </div>
+
+                        <div id="transition" class="tabcontent">
+                            <p>transition</p>
+                        </div>
+                        <div id="crypto" class="tabcontent">
+                            <p>crypto</p>
+                        </div>
+
+                    </div>
+                    <div class="tab__item">
+                        <h2 class="tabs__title">
+                            Періодичність
+                        </h2>
+                        <div class="tab subscribe">
+                            <button class="tablinks active left-radius" onclick="openTabs(event, 'periodically')">
+                                Підписка
+                            </button>
+                            <button class="tablinks  right-radius" onclick="openTabs(event, 'once')">Разово</button>
+                        </div>
+                        <div id="periodically" class="tabcontent show periodically ">
+                            <div class="periodically__item">
+                                <h3 class="periodically__title">
+                                    Валюта
+                                </h3>
+                                <div class="tab currency">
+                                    <button class="tablinks  left-radius" onclick="chooseTabs(event )">
+                                        UAH, ₴
+                                    </button>
+                                    <button class="tablinks " onclick="chooseTabs(event)">
+                                        USD, $
+                                    </button>
+                                    <button class="tablinks  right-radius" onclick="chooseTabs(event )">
+                                        EUR, €
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="periodically__item">
+                                <h3 class="periodically__title">
+                                    Сума підписки
+                                </h3>
+                                <div class="tab currency">
+                                    <button class="tablinks  left-radius" onclick="chooseTabs(event )">
+                                        50 ГРН
+                                        НА МІСЯЦЬ
+                                    </button>
+                                    <button class="tablinks " onclick="chooseTabs(event)">
+                                        100 ГРН
+                                        НА МІСЯЦЬ
+                                    </button>
+                                    <button class="tablinks  " onclick="chooseTabs(event )">
+                                        300 ГРН
+                                        НА МІСЯЦЬ
+                                    </button>
+                                    <button class="tablinks  right-radius" onclick="chooseTabs(event )">
+                                        1500 ГРН
+                                        НА МІСЯЦЬ
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="periodically__item">
+                                <p class="tab-content-text">
+                                    Підтверджуючи свою підписку, ви дозволяєте фонду «Добрі бобри» стягувати з вашої
+                                    картки цей й майбутні платежі відповідно до їхніх умов. Щоб відписатись від
+                                    щомісячної підписки, використовуйте відповідний функціонал у електронному листі,
+                                    який вам буде відправлено.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="once" class="tabcontent once">
+                            <div class="once__item">
+                                <h3 class="periodically__title">
+                                    Валюта
+                                </h3>
+                                <div class="tab currency">
+                                    <button class="tablinks  left-radius" onclick="chooseTabs(event )">
+                                        UAH, ₴
+                                    </button>
+                                    <button class="tablinks " onclick="chooseTabs(event)">
+                                        USD, $
+                                    </button>
+                                    <button class="tablinks  right-radius" onclick="chooseTabs(event )">
+                                        EUR, €
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="once__item">
+                                <h3 class="once__title">
+                                    Сума вашого внеску
+                                </h3>
+                                <input class="once__input" type="email" placeholder="0грн"/>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact_item">
+                        <h3 class="contact__title">
+                            EMAIL
+                        </h3>
+                        <input class="tab__input" type="email" placeholder="example@example.com"/>
+                    </div>
+                </div>
+                <div class="btn-box">
+                    <button type="submit" class="support-btn">Допомогти</button>
+                </div>
+            </div>
+</section>
+</main>
+
+<footer class="footer ">
+    <div class="footer__container container">
+        <div class="footer__column">
+            <div class="footer__column-title-item">
+                <img src="/static/img/logo.jpg" alt="" class="footer__column-patronat-logo">
+                <h2 class="footer__column-title">
+                    Бф Добрі Бобри
+                </h2>
+
+            </div>
+            <div class="footer__column-patronat-text">
+                За підтримки
+            </div>
+            <div class="footer__column-patronat">
+                <img src="/static/img/logo.jpg" alt="" class="footer__column-patronat-logo">
+                <h2 class="footer__column-patronat-name">
+                    Patronat
+                </h2>
+
+            </div>
+        </div>
+        <div class="footer__column">
+            <div class="footer__column-phone-item">
+                <p class="footer__column-phone-text">
+                    Гаряча Лінія:
+                </p>
+                <p class="footer__column-phone">
+                    +380 000 000 00 00
+                </p>
+            </div>
+            <div class="footer__column__social-link">
+                <div class="footer__column__social-link-item">
+                    <img src="/static/img/free-icon-facebook-733547.png" alt="facebook"
+                         class="footer__column__social-link-logo">
+                    <a href="#" class="footer__column__social-name">Фейсбук</a>
+                </div>
+                <div class="footer__column__social-link-item">
+                    <img src="/static/img/free-icon-instagram-1384063.png" alt="instagram"
+                         class="footer__column__social-link-logo">
+                    <a href="#" class="footer__column__social-name">Інстаграм</a>
+                </div>
+                <div class="footer__column__social-link-item">
+                    <img src="/static/img/telegram.png" alt="instagram" class="footer__column__social-link-logo">
+                    <a href="#" class="footer__column__social-name">Телеграм</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__column footer__column-help">
+            <p class="footer__column-help-text">
+                Будемо раді вашій <br> підтримці
+            </p>
+            <a href="" class="footer__column-button site-btn">
+                Допомогти
+            </a>
+        </div>
+    </div>
+</footer>
+</div>
+
+
+<script src="/static/js/tabs.js"></script>
+
+</body>
+</html>
